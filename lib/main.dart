@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:megahack_women/features/home/home.dart';
 import 'package:megahack_women/features/login/login.dart';
-import 'package:megahack_women/features/profile/profile.dart';
-import 'package:megahack_women/features/profile_woman/profile_woman.dart';
+import 'package:megahack_women/features/message/message.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ProfileWoman(),
+      home: Home(),
     );
   }
 }
