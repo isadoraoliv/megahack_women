@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:megahack_women/features/login/login.dart';
-import 'package:megahack_women/features/register_option/register_option.dart';
+import 'package:megahack_women/features/plans/plans.dart';
+import 'package:megahack_women/features/publish/publish.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: RegisterOption(),
+      home: Publish(),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:megahack_women/features/register/register.dart';
 import 'package:megahack_women/utils/app_colors.dart';
 
 class RegisterOption extends StatefulWidget {
@@ -22,7 +23,7 @@ class _RegisterOptionState extends State<RegisterOption> {
             Container(
               child: Center(
                 child: Image.asset(
-                  "assets/images/women_draw.png",
+                  "assets/images/woman_draw.png",
                 ),
               ),
             ),
@@ -34,7 +35,11 @@ class _RegisterOptionState extends State<RegisterOption> {
                 borderRadius: BorderRadius.circular(6),
                 color: AppColors.primary,
               ),
-              child: Center(
+              child: FlatButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Register()));
+                },
                 child: Text(
                   "Quero publicar projetos",
                   style: GoogleFonts.roboto(
@@ -55,7 +60,11 @@ class _RegisterOptionState extends State<RegisterOption> {
                 borderRadius: BorderRadius.circular(6),
                 color: AppColors.secundary,
               ),
-              child: Center(
+              child: FlatButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Register()));
+                },
                 child: Text(
                   "Quero abraçar projetos",
                   style: GoogleFonts.roboto(

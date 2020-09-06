@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "f077e38d3b232b7a27c7fd41d1305e70"
+build_time: [1599368668, 359220000]
+inputs:
+  "/Users/isadoraoliv/Documents/github/megahack_women/macos/Runner/MainFlutterWindow.swift": [1580121978, 0]
+  "/Users/isadoraoliv/Documents/github/megahack_women/macos/Runner/AppDelegate.swift": [1580121978, 0]
+  "/Users/isadoraoliv/Documents/github/megahack_women/macos/Flutter/GeneratedPluginRegistrant.swift": [1599368638, 487725984]

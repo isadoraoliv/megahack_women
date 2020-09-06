@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:megahack_women/features/register_option/register_option.dart';
 import 'package:megahack_women/utils/app_colors.dart';
 
 class LoginPage extends StatefulWidget {
@@ -102,7 +103,13 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.circular(6),
                     color: Color(0xFF73B468),
                   ),
-                  child: Center(
+                  child: FlatButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RegisterOption()));
+                    },
                     child: Text(
                       "Entrar",
                       style: GoogleFonts.roboto(
@@ -173,7 +180,13 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  child: Center(
+                  child: FlatButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RegisterOption()));
+                    },
                     child: Text(
                       "FAZER LOGIN COM O GOOGLE",
                       style: GoogleFonts.roboto(

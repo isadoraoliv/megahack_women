@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "558c10d5b34d910dce10c92ec7a4609d"
+build_time: [1599368645, 892074000]
+inputs:
+  "/Users/isadoraoliv/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+3/macos/Classes/PathProviderPlugin.swift": [1588621188, 0]
