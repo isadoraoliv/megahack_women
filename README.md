@@ -1,16 +1,6 @@
-# megahack_women
 
-A new Flutter project.
+##  MegaHack Women
+Este projeto foi desenvolvido com o objetivo de facilitar o acesso de mulheres universitárias com ideias de um negócio a aceleradoras e empresas que estejam dispostas a investir nessa ideia. Esse problema foi proposto pelo MCTIC no Hackaton MegaHack Women.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Como funciona?
+O  projeto se trata de uma plataforma online em que mulheres podem descrever suas ideias e tê-las lidas por empresas que têm interesse em investir em novas ideias de negócios. Essas empresas e aceleradoras podem entrar em contato com as mulheres e estabelecerem um acordo. Assim,  mulheres têm uma maior chance de conseguir transformar um trabalho acadêmico em uma empresa de fato.
