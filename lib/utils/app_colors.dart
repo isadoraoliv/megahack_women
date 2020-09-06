@@ -2,5 +2,17 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const Color primary = Color(0xFF914CC2);
+  static const Color secundary = Color(0xFFA9A9E0);
   static const Color input = Color(0xFFA8A3A3);
+
+  static const Color registerGradientStart = secundary;
+  static const Color registerGradientEnd = Colors.white;
+
+  static const registerOptionGradient = const LinearGradient(
+    begin: Alignment.topRight,
+    end: Alignment.bottomRight,
+    colors: [registerGradientEnd, registerGradientStart],
+    stops: [0.8, 2.0],
+    tileMode: TileMode.repeated,
+  );
 }
