@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:megahack_women/features/feed.dart/feed.dart';
+import 'package:megahack_women/features/home/home.dart';
 import 'package:megahack_women/utils/app_colors.dart';
 
 class Register extends StatefulWidget {
@@ -391,7 +393,7 @@ class _RegisterState extends State<Register> {
                   child: FlatButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Register()));
+                          MaterialPageRoute(builder: (context) => Home()));
                     },
                     child: Text(
                       "Confirmar Cadastro",
