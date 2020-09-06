@@ -8,8 +8,10 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.red,
+    return Scaffold(
+      body: Container(
+        color: Colors.red,
+      ),
     );
   }
 }

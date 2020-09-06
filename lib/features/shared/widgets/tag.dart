@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class TagWidget extends StatelessWidget {
   final Color backgroundColor;
+  final Color textColor;
   final String text;
   final IconData icon;
 
@@ -10,6 +11,7 @@ class TagWidget extends StatelessWidget {
     Key key,
     @required this.backgroundColor,
     @required this.text,
+    @required this.textColor,
     this.icon,
   }) : super(key: key);
 
@@ -27,12 +29,19 @@ class TagWidget extends StatelessWidget {
             text,
             style: GoogleFonts.roboto(
               textStyle: TextStyle(
-                color: Colors.black,
+                color: textColor,
                 fontSize: 16,
               ),
             ),
           ),
-          icon != null ? Icon(icon) : Container(),
+          SizedBox(width: 2),
+          icon != null
+              ? Icon(
+                  icon,
+                  color: Colors.white,
+                  size: 16,
+                )
+              : Container(),
         ],
       ),
     );

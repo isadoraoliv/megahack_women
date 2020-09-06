@@ -64,6 +64,7 @@ class CardProject extends StatelessWidget {
               TagWidget(
                 backgroundColor: colorTag,
                 text: textTag,
+                textColor: Colors.black,
               ),
               CircleAvatar(
                 backgroundImage: AssetImage(image),

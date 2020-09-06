@@ -7,6 +7,7 @@ class AppColors {
   static const Color inputLight = Color(0xFFF1F1F1);
   static const Color greyMedium = Color(0xFF8C8A8A);
   static const Color backgroundCard = Color(0xFFFAFAFA);
+  static const Color tagColor = Color(0xFFE4E4E4);
 
   static const Color registerGradientStart = secundary;
   static const Color registerGradientEnd = Colors.white;
