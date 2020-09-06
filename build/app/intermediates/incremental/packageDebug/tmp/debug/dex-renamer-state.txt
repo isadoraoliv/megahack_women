@@ -1,4 +1,4 @@
-#Sun Sep 06 08:41:16 BRT 2020
+#Sun Sep 06 08:48:13 BRT 2020
 base.0=/Users/isadoraoliv/Documents/github/megahack_women/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

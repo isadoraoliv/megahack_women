@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:megahack_women/features/login/login.dart';
+import 'package:megahack_women/features/publish_details/publish_details.dart';
 import 'package:megahack_women/features/shared/widgets/card_profile.dart';
 import 'package:megahack_women/features/shared/widgets/tag.dart';
 import 'package:megahack_women/utils/app_colors.dart';
@@ -192,6 +193,12 @@ class _ProfileWomanState extends State<ProfileWoman> {
                       like: "12",
                       data: "05/09/2020",
                       colorTag: Colors.red[100],
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => PublishDetails()));
+                      },
                     ),
                     SizedBox(height: 10),
                     CardProfile(
