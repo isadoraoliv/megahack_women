@@ -8,14 +8,15 @@ class TagWidget extends StatelessWidget {
 
   const TagWidget({
     Key key,
-    this.backgroundColor,
-    this.text,
+    @required this.backgroundColor,
+    @required this.text,
     this.icon,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(6),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(6),
         color: backgroundColor,
@@ -31,7 +32,7 @@ class TagWidget extends StatelessWidget {
               ),
             ),
           ),
-          icon != null ? Icon(icon) : null,
+          icon != null ? Icon(icon) : Container(),
         ],
       ),
     );
