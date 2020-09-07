@@ -36,38 +36,6 @@ class _ProfileCompanyState extends State<ProfileCompany> {
                     ),
                     Positioned(
                       top: 20,
-                      left: 360,
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.settings,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LoginPage()));
-                        },
-                      ),
-                    ),
-                    Positioned(
-                      top: 20,
-                      left: 360,
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.settings,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LoginPage()));
-                        },
-                      ),
-                    ),
-                    Positioned(
-                      top: 20,
                       left: 130,
                       child: Container(
                         height: 150,
@@ -123,7 +91,7 @@ class _ProfileCompanyState extends State<ProfileCompany> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24.0),
                 child: Text(
-                  "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec.",
+                  "Desde 2017 no mercado, somos responsáveis por acelerar mais de 78 startups, nossa base é a inovação.",
                   style: GoogleFonts.roboto(
                     textStyle: TextStyle(
                       color: Colors.black,
@@ -195,39 +163,32 @@ class _ProfileCompanyState extends State<ProfileCompany> {
                     ),
                     SizedBox(height: 12),
                     CardProject(
-                      title: "Consectetur adipiscing elit",
+                      title:
+                          "Sapato com propulsores eletromagnéticos para usar em Marte",
                       subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
+                          "Sabemos que é inévitavel a colonização de Marte. Ainda mais com um dos maiores bilionários do mundo, Elon Musk construindo um ônibus espacial. Sendo assim, precisaremos não apenas de moradias personalizadas mas também rou...",
                       textTag: "Tecnologia",
                       image: "assets/images/woman2.png",
                       colorTag: Colors.red[100],
                     ),
                     SizedBox(height: 12),
                     CardProject(
-                      title: "Consectetur adipiscing elit",
+                      title: "ARD17: A geladeira com display digital",
                       subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
+                          "Muitas pessoas acabam abrindo a geladeira apenas para ver o tem tem dentro, segundo estudos cada pessoa chega a fazer isso de 7 a 10 vezes por dia, aumentando muito o consumo de energia. A fim de sanar isso o ARN17 possui um display que informa quais alimentos tem na geladeira. Além disso é possível ver pelo display o supermercado mais próximo que tem o alimento que está em falta na sua geladeira e fazer o ped...",
+                      textTag: "Tecnologia",
+                      image: "assets/images/woman1.png",
+                      colorTag: Colors.red[100],
+                    ),
+                    SizedBox(height: 12),
+                    CardProject(
+                      title:
+                          "Relógio que medem todos os nutrientes, plaquetas, glóbulos.. presentes no corpo",
+                      subtitle:
+                          "O relogio é feito de adamantium que utiliza um laser capaz de scanear a área em que esta sendo usado e mostrar os resultados das vitaminas, plaquetas, globulos brancos e vermelhos presen..",
                       textTag: "Saúde",
-                      image: "assets/images/woman1.png",
+                      image: "assets/images/woman2.png",
                       colorTag: Colors.green[100],
-                    ),
-                    SizedBox(height: 12),
-                    CardProject(
-                      title: "Consectetur adipiscing elit",
-                      subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
-                      textTag: "Finança",
-                      image: "assets/images/woman3.png",
-                      colorTag: Colors.yellow[100],
-                    ),
-                    SizedBox(height: 12),
-                    CardProject(
-                      title: "Consectetur adipiscing elit",
-                      subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
-                      textTag: "Negócios",
-                      image: "assets/images/woman1.png",
-                      colorTag: Colors.blue[100],
                     ),
                     SizedBox(height: 12),
                     Row(

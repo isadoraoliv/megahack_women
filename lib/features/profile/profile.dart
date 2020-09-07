@@ -186,9 +186,10 @@ class _ProfileState extends State<Profile> {
                     ),
                     SizedBox(height: 10),
                     CardProfile(
-                      title: "Consectetur adipiscing elit",
+                      title:
+                          "Celular do Futuro: Lentes ópticas OMD19 e dispositivo sensorial",
                       subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
+                          "Com a evolução tecnologica crescente, os celulares já não são considerados equipamentos inovadores. Já faz algum tempo que seus upgrades se limitam a melhorias no hardware e no software, visando a inovação com as lentes OMD19 é possível você ver diantes dos seus olhos todos os aplicativos que precisa e para poder acessá-los bastar instalar o dispositivo sensorial ao lado do olho esquerdo. Esse dispositivo capta ondas do cerebrais ou seja se vocé pensar em abrir o aplicativo que está a sua frente, o mesmo vai ser captado pelo sensor e a ação será realizada em sincronia com a lente...",
                       textTag: "Tecnologia",
                       like: "12",
                       data: "05/09/2020",
@@ -200,27 +201,18 @@ class _ProfileState extends State<Profile> {
                                 builder: (context) => PublishDetails()));
                       },
                     ),
-                    SizedBox(height: 10),
-                    CardProfile(
-                      title: "Consectetur adipiscing elit",
-                      subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
-                      textTag: "Tecnologia",
-                      like: "12",
-                      data: "05/09/2020",
-                      colorTag: Colors.red[100],
-                    ),
-                    SizedBox(height: 10),
-                    CardProfile(
-                      title: "Consectetur adipiscing elit",
-                      subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
-                      textTag: "Tecnologia",
-                      like: "12",
-                      data: "05/09/2020",
-                      colorTag: Colors.red[100],
-                    ),
                     SizedBox(height: 12),
+                    CardProfile(
+                      title: "ARD17: A geladeira com display digital",
+                      subtitle:
+                          "Muitas pessoas acabam abrindo a geladeira apenas para ver o tem tem dentro, segundo estudos cada pessoa chega a fazer isso de 7 a 10 vezes por dia, aumentando muito o consumo de energia. A fim de sanar isso o ARN17 possui um display que informa quais alimentos tem na geladeira. Além disso é possível ver pelo display o supermercado mais próximo que tem o alimento que está em falta na sua geladeira e fazer o ped...",
+                      textTag: "Tecnologia",
+                      like: "12",
+                      data: "05/09/2020",
+                      colorTag: Colors.red[100],
+                      onTap: () {},
+                    ),
+                    SizedBox(height: 10),
                     Align(
                       alignment: Alignment.topLeft,
                       child: Text(

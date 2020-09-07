@@ -22,7 +22,7 @@ class PublishDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Consectetur adipiscing elit",
+                "Celular do Futuro: Lentes ópticas OMD19 e dispositivo sensorial",
                 style: GoogleFonts.roboto(
                   textStyle: TextStyle(
                     color: Colors.black,
@@ -33,7 +33,7 @@ class PublishDetails extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Text(
-                "Duis nibh justo, varius quis tincidunt eu, consectetur et risus. Pellentesque ac condimentum nisl. Nunc pharetra libero nulla, quis interdum quam dictum quis. Sed efficitur lacinia turpis, porttitor porttitor tellus imperdiet eu. In placerat ante ac pellentesque tristique. Ut ac fringilla ligula. Phasellus eu mauris ex. Etiam interdum iaculis feugiat. Morbi mattis, lacus sed molestie condimentum, tortor massa pharetra ex, dictum bibendum arcu ante sed lectus. Pellentesque magna dui, rutrum eu diam vitae, consectetur euismod risus. Ut eu quam mauris.",
+                "Com a evolução tecnologica crescente, os celulares já não são considerados equipamentos inovadores. Já faz algum tempo que seus upgrades se limitam a melhorias no hardware e no software, visando a inovação com as lentes OMD19 é possível você ver diantes dos seus olhos todos os aplicativos que precisa e para poder acessá-los bastar instalar o dispositivo sensorial ao lado do olho esquerdo. Esse dispositivo capta ondas do cerebrais ou seja se vocé pensar em abrir o aplicativo que está a sua frente, o mesmo vai ser captado pelo sensor e a ação será realizada em sincronia com a lente.",
                 style: GoogleFonts.roboto(
                   textStyle: TextStyle(
                     color: Colors.black,
@@ -43,17 +43,7 @@ class PublishDetails extends StatelessWidget {
               ),
               SizedBox(height: 10),
               Text(
-                "In hac habitasse platea dictumst. Etiam eu porta tellus. In cursus tortor ante, quis maximus metus ultrices sed. Vivamus suscipit lorem id varius pulvinar. Phasellus eu nulla at dui congue tincidunt ut sed mi. Vestibulum placerat tortor nec semper dapibus. Fusce id auctor eros, et pharetra sapien. Proin id urna eget magna accumsan viverra at sit amet diam. Donec urna augue, tincidunt eget mi ac, accumsan finibus tortor. In at auctor ligula. Etiam turpis est, semper in purus ac, condimentum lacinia velit.",
-                style: GoogleFonts.roboto(
-                  textStyle: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16.0,
-                  ),
-                ),
-              ),
-              SizedBox(height: 10),
-              Text(
-                "Link associados",
+                "Links associados",
                 style: GoogleFonts.roboto(
                   textStyle: TextStyle(
                     color: Colors.black,

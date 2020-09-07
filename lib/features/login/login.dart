@@ -9,19 +9,24 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  bool check = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        color: AppColors.primary,
         child: Padding(
-          padding: const EdgeInsets.all(60.0),
+          padding: const EdgeInsets.all(50.0),
           child: SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                SizedBox(height: 10),
+                Image.asset("assets/images/logo_ada.png"),
+                SizedBox(height: 25),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Align(
@@ -30,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
                       "Usuário",
                       style: GoogleFonts.roboto(
                         textStyle: TextStyle(
-                          color: Colors.white,
+                          color: AppColors.greyMedium,
                           fontSize: 18.0,
                         ),
                       ),
@@ -41,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6),
-                    color: AppColors.input,
+                    color: AppColors.inputLight,
                   ),
                   child: TextField(
                     keyboardType: TextInputType.text,
@@ -66,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
                       "Senha",
                       style: GoogleFonts.roboto(
                         textStyle: TextStyle(
-                          color: Colors.white,
+                          color: AppColors.greyMedium,
                           fontSize: 18.0,
                         ),
                       ),
@@ -77,7 +82,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6),
-                    color: AppColors.input,
+                    color: AppColors.inputLight,
                   ),
                   child: TextField(
                     keyboardType: TextInputType.text,
@@ -122,29 +127,51 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 SizedBox(height: 10),
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    "Me manter conectado",
-                    style: GoogleFonts.roboto(
-                      textStyle: TextStyle(
-                        color: Colors.white,
-                        fontSize: 14.0,
+                Row(
+                  children: [
+                    Checkbox(
+                      activeColor: AppColors.primary,
+                      visualDensity: VisualDensity.compact,
+                      value: check,
+                      onChanged: (value) {
+                        setState(() {
+                          check = value;
+                        });
+                      },
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Me manter conectado",
+                        style: GoogleFonts.roboto(
+                          textStyle: TextStyle(
+                            color: AppColors.greyMedium,
+                            fontSize: 14.0,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 8),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      "Cadastrar",
-                      style: GoogleFonts.roboto(
-                        textStyle: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14.0,
-                          decoration: TextDecoration.underline,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => RegisterOption()));
+                      },
+                      child: Text(
+                        "Cadastrar",
+                        style: GoogleFonts.roboto(
+                          textStyle: TextStyle(
+                            color: AppColors.greyMedium,
+                            fontSize: 14.0,
+                            decoration: TextDecoration.underline,
+                          ),
                         ),
                       ),
                     ),
@@ -153,7 +180,7 @@ class _LoginPageState extends State<LoginPage> {
                       "|",
                       style: GoogleFonts.roboto(
                         textStyle: TextStyle(
-                          color: Colors.white,
+                          color: AppColors.greyMedium,
                           fontSize: 14.0,
                         ),
                       ),
@@ -163,7 +190,7 @@ class _LoginPageState extends State<LoginPage> {
                       "Esqueci minha senha",
                       style: GoogleFonts.roboto(
                         textStyle: TextStyle(
-                          color: Colors.white,
+                          color: AppColors.greyMedium,
                           fontSize: 14.0,
                           decoration: TextDecoration.underline,
                         ),
@@ -176,7 +203,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 37,
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Colors.white,
+                      color: AppColors.greyMedium,
                     ),
                     borderRadius: BorderRadius.circular(6),
                   ),
@@ -191,7 +218,7 @@ class _LoginPageState extends State<LoginPage> {
                       "FAZER LOGIN COM O GOOGLE",
                       style: GoogleFonts.roboto(
                         textStyle: TextStyle(
-                          color: Colors.white,
+                          color: AppColors.greyMedium,
                           fontSize: 14.0,
                         ),
                       ),
