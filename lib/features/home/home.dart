@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:megahack_women/features/feed.dart/feed.dart';
 import 'package:megahack_women/features/message/message.dart';
+import 'package:megahack_women/features/notification/notifications.dart';
 import 'package:megahack_women/features/profile/profile.dart';
-import 'package:megahack_women/features/profile_woman/profile_woman.dart';
 import 'package:megahack_women/features/publish/publish.dart';
-import 'package:megahack_women/features/shared/widgets/card_project.dart';
 import 'package:megahack_women/utils/app_colors.dart';
 
 class Home extends StatefulWidget {
@@ -14,75 +12,60 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _currentIndex = 0;
+  int _selectedIndex = 0;
 
-  //Home(),
-  //  Message(),
-  //  Profile(),
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   final tabs = <Widget>[
     Feed(),
     Message(),
     Publish(),
-    ProfileWoman(),
+    Notifications(),
     Profile(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: tabs[_currentIndex]),
+      body: Center(child: tabs[_selectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: AppColors.primary,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              color: AppColors.iconBottomColor,
-            ),
+            icon: Icon(Icons.home),
             backgroundColor: AppColors.backgroundBottom,
             title: Text(""),
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.message,
-              color: AppColors.iconBottomColor,
-            ),
+            icon: Icon(Icons.message),
             backgroundColor: AppColors.backgroundBottom,
             title: Text(""),
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.add_circle_outline,
-              color: AppColors.iconBottomColor,
-            ),
+            icon: Icon(Icons.add_circle_outline),
             backgroundColor: AppColors.backgroundBottom,
             title: Text(""),
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.notifications,
-              color: AppColors.iconBottomColor,
-            ),
+            icon: Icon(Icons.notifications),
             backgroundColor: AppColors.backgroundBottom,
             title: Text(""),
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person,
-              color: AppColors.iconBottomColor,
-            ),
+            icon: Icon(Icons.person),
             backgroundColor: AppColors.backgroundBottom,
             title: Text(""),
           ),
         ],
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
+        onTap: _onItemTapped,
       ),
     );
   }

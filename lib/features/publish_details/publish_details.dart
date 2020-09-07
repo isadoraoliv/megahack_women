@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:megahack_women/features/home/home.dart';
 import 'package:megahack_women/features/message/message.dart';
 import 'package:megahack_women/utils/app_colors.dart';
 
@@ -13,8 +12,7 @@ class PublishDetails extends StatelessWidget {
         leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Home()));
+              Navigator.pop(context);
             }),
       ),
       body: Container(

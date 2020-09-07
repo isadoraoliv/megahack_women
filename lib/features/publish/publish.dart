@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:megahack_women/features/profile/profile.dart';
 import 'package:megahack_women/utils/app_colors.dart';
 
 class Publish extends StatefulWidget {
@@ -11,6 +12,9 @@ class _PublishState extends State<Publish> {
   bool check1 = false;
   bool check2 = false;
   bool check3 = false;
+  bool check4 = false;
+  bool check5 = false;
+  bool check6 = false;
 
   @override
   void initState() {
@@ -139,7 +143,7 @@ class _PublishState extends State<Publish> {
                     value: check1,
                     onChanged: (value) {
                       setState(() {
-                        check1 = true;
+                        check1 = value;
                       });
                     },
                   ),
@@ -159,10 +163,10 @@ class _PublishState extends State<Publish> {
                 children: [
                   Checkbox(
                     activeColor: AppColors.primary,
-                    value: check1,
+                    value: check2,
                     onChanged: (value) {
                       setState(() {
-                        check1 = true;
+                        check2 = value;
                       });
                     },
                   ),
@@ -182,10 +186,10 @@ class _PublishState extends State<Publish> {
                 children: [
                   Checkbox(
                     activeColor: AppColors.primary,
-                    value: check2,
+                    value: check3,
                     onChanged: (value) {
                       setState(() {
-                        check2 = true;
+                        check3 = value;
                       });
                     },
                   ),
@@ -205,10 +209,10 @@ class _PublishState extends State<Publish> {
                 children: [
                   Checkbox(
                     activeColor: AppColors.primary,
-                    value: check2,
+                    value: check4,
                     onChanged: (value) {
                       setState(() {
-                        check2 = true;
+                        check4 = value;
                       });
                     },
                   ),
@@ -228,10 +232,10 @@ class _PublishState extends State<Publish> {
                 children: [
                   Checkbox(
                     activeColor: AppColors.primary,
-                    value: check2,
+                    value: check5,
                     onChanged: (value) {
                       setState(() {
-                        check2 = true;
+                        check5 = value;
                       });
                     },
                   ),
@@ -251,10 +255,10 @@ class _PublishState extends State<Publish> {
                 children: [
                   Checkbox(
                     activeColor: AppColors.primary,
-                    value: check2,
+                    value: check6,
                     onChanged: (value) {
                       setState(() {
-                        check2 = true;
+                        check6 = value;
                       });
                     },
                   ),
@@ -280,7 +284,10 @@ class _PublishState extends State<Publish> {
                     color: AppColors.primary,
                   ),
                   child: FlatButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Profile()));
+                    },
                     child: Text(
                       "Publicar projeto",
                       style: GoogleFonts.roboto(

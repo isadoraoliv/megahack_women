@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:megahack_women/features/feed.dart/feed.dart';
 import 'package:megahack_women/features/home/home.dart';
 import 'package:megahack_women/utils/app_colors.dart';
 

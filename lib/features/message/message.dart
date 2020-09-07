@@ -39,7 +39,7 @@ class Message extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           backgroundImage:
-                              AssetImage("assets/images/bussiness_woman.png"),
+                              AssetImage("assets/images/bussiness_woman.jpeg"),
                         ),
                         SizedBox(width: 10),
                         Bubble(

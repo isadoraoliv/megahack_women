@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:megahack_women/features/login/login.dart';
+import 'package:megahack_women/features/publish_details/publish_details.dart';
+import 'package:megahack_women/features/settings/settings.dart';
 import 'package:megahack_women/features/shared/widgets/card_profile.dart';
-import 'package:megahack_women/features/shared/widgets/card_project.dart';
 import 'package:megahack_women/features/shared/widgets/tag.dart';
 import 'package:megahack_women/utils/app_colors.dart';
 
@@ -37,7 +38,7 @@ class _ProfileState extends State<Profile> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => LoginPage()));
+                                  builder: (context) => Settings()));
                         },
                       ),
                     ),
@@ -59,29 +60,41 @@ class _ProfileState extends State<Profile> {
                           ],
                         ),
                         child: CircleAvatar(
-                          backgroundImage: AssetImage(
-                            "assets/images/bussiness_woman.png",
-                          ),
-                        ),
+                            backgroundImage:
+                                AssetImage("assets/images/woman1.png")),
                       ),
                     ),
                   ],
                 ),
               ),
-              Text(
-                "Aceleradora #1",
-                style: GoogleFonts.roboto(
-                  textStyle: TextStyle(
-                    color: Colors.black,
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Mariana Alves",
+                    style: GoogleFonts.roboto(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
-                ),
+                  Text(
+                    ", 23 anos",
+                    style: GoogleFonts.roboto(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18.0,
+                      ),
+                    ),
+                  ),
+                ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.map),
+                  Icon(Icons.location_on),
                   SizedBox(width: 4),
                   Text(
                     "Minas Gerais",
@@ -95,15 +108,12 @@ class _ProfileState extends State<Profile> {
                 ],
               ),
               SizedBox(height: 4),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                child: Text(
-                  "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec.",
-                  style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                      color: Colors.black,
-                      fontSize: 16.0,
-                    ),
+              Text(
+                "Estudante de Engenharia Ambiental",
+                style: GoogleFonts.roboto(
+                  textStyle: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16.0,
                   ),
                 ),
               ),
@@ -115,6 +125,13 @@ class _ProfileState extends State<Profile> {
                     backgroundColor: Color(0xFF73B468),
                     text: "Seguir",
                     icon: Icons.add,
+                    textColor: Colors.white,
+                  ),
+                  SizedBox(width: 10),
+                  TagWidget(
+                    backgroundColor: AppColors.primary,
+                    text: "Enviar mensagem",
+                    icon: Icons.message,
                     textColor: Colors.white,
                   ),
                 ],
@@ -142,14 +159,14 @@ class _ProfileState extends State<Profile> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         TagWidget(
-                          backgroundColor: Colors.red[200],
-                          text: "Tecnologia",
+                          backgroundColor: AppColors.tagColor,
+                          text: "Mentorias",
                           textColor: Colors.black,
                         ),
                         SizedBox(width: 10),
                         TagWidget(
-                          backgroundColor: Colors.green[200],
-                          text: "Saúde",
+                          backgroundColor: AppColors.tagColor,
+                          text: "Aceleradoras",
                           textColor: Colors.black,
                         ),
                       ],
@@ -158,7 +175,7 @@ class _ProfileState extends State<Profile> {
                     Align(
                       alignment: Alignment.topLeft,
                       child: Text(
-                        "Trabalhos abraçados",
+                        "Trabalhos publicados",
                         style: GoogleFonts.roboto(
                           textStyle: TextStyle(
                             color: Colors.black,
@@ -168,93 +185,72 @@ class _ProfileState extends State<Profile> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 12),
-                    CardProject(
+                    SizedBox(height: 10),
+                    CardProfile(
                       title: "Consectetur adipiscing elit",
                       subtitle:
                           "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
                       textTag: "Tecnologia",
-                      image: "assets/images/woman2.png",
+                      like: "12",
+                      data: "05/09/2020",
+                      colorTag: Colors.red[100],
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => PublishDetails()));
+                      },
+                    ),
+                    SizedBox(height: 10),
+                    CardProfile(
+                      title: "Consectetur adipiscing elit",
+                      subtitle:
+                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
+                      textTag: "Tecnologia",
+                      like: "12",
+                      data: "05/09/2020",
+                      colorTag: Colors.red[100],
+                    ),
+                    SizedBox(height: 10),
+                    CardProfile(
+                      title: "Consectetur adipiscing elit",
+                      subtitle:
+                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
+                      textTag: "Tecnologia",
+                      like: "12",
+                      data: "05/09/2020",
                       colorTag: Colors.red[100],
                     ),
                     SizedBox(height: 12),
-                    CardProject(
-                      title: "Consectetur adipiscing elit",
-                      subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
-                      textTag: "Saúde",
-                      image: "assets/images/woman1.png",
-                      colorTag: Colors.green[100],
-                    ),
-                    SizedBox(height: 12),
-                    CardProject(
-                      title: "Consectetur adipiscing elit",
-                      subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
-                      textTag: "Finança",
-                      image: "assets/images/woman3.png",
-                      colorTag: Colors.yellow[100],
-                    ),
-                    SizedBox(height: 12),
-                    CardProject(
-                      title: "Consectetur adipiscing elit",
-                      subtitle:
-                          "Nunc fringilla luctus auctor. Nam mattis augue turpis, a ornare nisi dictum nec. Quisque ac congue quam, sit amet lacinia odio...",
-                      textTag: "Negócios",
-                      image: "assets/images/woman1.png",
-                      colorTag: Colors.blue[100],
-                    ),
-                    SizedBox(height: 12),
-                    Row(
-                      children: [
-                        Text(
-                          "6 Projetos abraçados",
-                          style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18.0,
-                              fontWeight: FontWeight.bold,
-                            ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Conexões",
+                        style: GoogleFonts.roboto(
+                          textStyle: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(width: 12),
-                        Container(
-                          height: 40,
-                          width: 160,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 0,
-                                child: CircleAvatar(
-                                  backgroundImage:
-                                      AssetImage("assets/images/woman4.png"),
-                                ),
-                              ),
-                              Positioned(
-                                left: 18,
-                                child: CircleAvatar(
-                                  backgroundImage:
-                                      AssetImage("assets/images/woman3.png"),
-                                ),
-                              ),
-                              Positioned(
-                                left: 32,
-                                child: CircleAvatar(
-                                  backgroundImage:
-                                      AssetImage("assets/images/woman2.png"),
-                                ),
-                              ),
-                              Positioned(
-                                top: 10,
-                                left: 74,
-                                child: Icon(
-                                  Icons.add,
-                                  color: Colors.black,
-                                  size: 20,
-                                ),
-                              )
-                            ],
-                          ),
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage:
+                              AssetImage("assets/images/woman4.png"),
+                        ),
+                        SizedBox(width: 10),
+                        CircleAvatar(
+                          backgroundImage:
+                              AssetImage("assets/images/woman3.png"),
+                        ),
+                        SizedBox(width: 10),
+                        CircleAvatar(
+                          backgroundImage:
+                              AssetImage("assets/images/woman2.png"),
                         ),
                       ],
                     ),
