@@ -6,13 +6,22 @@ class Plans extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppColors.primary,
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            }),
+      ),
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 32),
+            margin: EdgeInsets.only(top: 10),
             child: Center(
               child: Image.asset(
                 "assets/images/woman_draw2.png",
+                scale: 1.3,
               ),
             ),
           ),

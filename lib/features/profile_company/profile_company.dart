@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:megahack_women/features/login/login.dart';
+import 'package:megahack_women/features/settings/settings.dart';
 import 'package:megahack_women/features/shared/widgets/card_project.dart';
 import 'package:megahack_women/features/shared/widgets/tag.dart';
 
@@ -23,6 +24,22 @@ class _ProfileCompanyState extends State<ProfileCompany> {
                 child: Stack(
                   children: [
                     Image.asset("assets/images/background.png"),
+                    Positioned(
+                      top: 20,
+                      left: 360,
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.settings,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Settings()));
+                        },
+                      ),
+                    ),
                     Positioned(
                       top: 20,
                       child: IconButton(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:megahack_women/features/plans/plans.dart';
 import 'package:megahack_women/features/publish_details/publish_details.dart';
 import 'package:megahack_women/features/settings/settings.dart';
 import 'package:megahack_women/features/shared/widgets/card_profile.dart';
@@ -30,14 +31,12 @@ class _ProfileState extends State<Profile> {
                       left: 360,
                       child: IconButton(
                         icon: Icon(
-                          Icons.settings,
+                          Icons.monetization_on,
                           color: Colors.white,
                         ),
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Settings()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Plans()));
                         },
                       ),
                     ),

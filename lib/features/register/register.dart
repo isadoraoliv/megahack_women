@@ -184,6 +184,7 @@ class _RegisterState extends State<Register> {
                 child: TextField(
                   keyboardType: TextInputType.text,
                   cursorColor: AppColors.primary,
+                  obscureText: true,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.only(left: 8),
                     border: InputBorder.none,
@@ -218,6 +219,7 @@ class _RegisterState extends State<Register> {
                 child: TextField(
                   keyboardType: TextInputType.text,
                   cursorColor: AppColors.primary,
+                  obscureText: true,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.only(left: 8),
                     border: InputBorder.none,
