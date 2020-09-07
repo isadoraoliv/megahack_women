@@ -8,5 +8,5 @@ O  projeto se trata de uma plataforma online em que mulheres podem descrever sua
 ### Funcionamento do aplicativo:
 
 <p align="center">
-  <img src="app_ada.gif">
+  <img src="ada_app.gif">
 </p>
