@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:megahack_women/features/plans/plans.dart';
 import 'package:megahack_women/features/publish_details/publish_details.dart';
-import 'package:megahack_women/features/settings/settings.dart';
 import 'package:megahack_women/features/shared/widgets/card_profile.dart';
 import 'package:megahack_women/features/shared/widgets/tag.dart';
 import 'package:megahack_women/utils/app_colors.dart';
@@ -188,7 +187,7 @@ class _ProfileState extends State<Profile> {
                       title:
                           "Celular do Futuro: Lentes ópticas OMD19 e dispositivo sensorial",
                       subtitle:
-                          "Com a evolução tecnologica crescente, os celulares já não são considerados equipamentos inovadores. Já faz algum tempo que seus upgrades se limitam a melhorias no hardware e no software, visando a inovação com as lentes OMD19 é possível você ver diantes dos seus olhos todos os aplicativos que precisa e para poder acessá-los bastar instalar o dispositivo sensorial ao lado do olho esquerdo. Esse dispositivo capta ondas do cerebrais ou seja se vocé pensar em abrir o aplicativo que está a sua frente, o mesmo vai ser captado pelo sensor e a ação será realizada em sincronia com a lente...",
+                          "Com a evolução tecnologica crescente, os celulares já não são considerados equipamentos inovadores. Já faz algum tempo que seus upgrades se limitam a melhorias no hardware e no software, visando a inovação com as lentes OMD19 é possível você ver diantes dos seus olhos todos os aplicativos que precisa e para poder acessá-los bastar instalar o dispositivo sensorial ao lado do olho esquerdo. Esse dispositivo capta ondas cerebrais ou seja se vocé pensar em abrir o aplicativo que está a sua frente, o mesmo vai ser captado pelo sensor e a ação será realizada em sincronia com a lente...",
                       textTag: "Tecnologia",
                       like: "12",
                       data: "05/09/2020",

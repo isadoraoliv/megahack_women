@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:megahack_women/features/home/home.dart';
 import 'package:megahack_women/features/login/login.dart';
 
 void main() {

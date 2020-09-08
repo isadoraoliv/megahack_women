@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:megahack_women/features/login/login.dart';
 import 'package:megahack_women/features/settings/settings.dart';
 import 'package:megahack_women/features/shared/widgets/card_project.dart';
 import 'package:megahack_women/features/shared/widgets/tag.dart';
